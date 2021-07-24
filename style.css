@@ -1,0 +1,226 @@
+/* * {
+  border: 1px solid;
+} */
+
+#title {
+  font-family: "DM Mono", monospace;
+  color: rgb(4, 4, 167);
+  font-weight: 500;
+}
+
+#imgTitle {
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#searchInput {
+  position: relative;
+}
+
+#search {
+  position: absolute;
+  right: 0px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+#header {
+  background-color: #ebebeb;
+}
+
+.nav-item {
+  font-family: "Raleway", sans-serif;
+}
+
+#aboutDetails {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  color: #555;
+}
+
+#about {
+  color: rgb(5, 5, 112);
+}
+
+#aboutImage {
+  height: 150px;
+  width: 170px;
+  float: right;
+  right: 0;
+}
+
+#chartTitle {
+  text-align: center;
+  color: rgb(5, 5, 112);
+}
+
+#coinSymbol {
+  color: rgb(31, 24, 25);
+}
+
+.modalDiv {
+  height: 300px;
+}
+#modalBody {
+  height: 200px;
+}
+
+#modalTitle {
+  text-align: center;
+  color: darkblue;
+}
+
+#modalCoinName {
+  padding: 6px;
+  font-weight: 700;
+  color: blue;
+}
+
+.checkBox {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.checkBoxModal {
+  position: absolute;
+  right: 30%;
+}
+
+.modal-header,
+.modal-footer {
+  float: left;
+  background: rgb(248, 246, 250);
+  height: 40px;
+  padding: 0px;
+  border-bottom: none;
+  border-top: none;
+}
+
+#modalBody {
+  background-color: white;
+  height: 210px;
+  padding: 5px;
+  margin-top: 0 px;
+  margin-bottom: 5px;
+}
+
+.modalDiv,
+.modal-footer {
+  margin-top: 3px;
+  border-bottom: white;
+  height: 35px;
+}
+
+.modal-footer,
+.modal-header {
+  height: 60px;
+}
+
+.modal-content {
+  height: auto;
+}
+
+/* chart */
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
